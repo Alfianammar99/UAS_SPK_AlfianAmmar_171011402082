@@ -14,8 +14,6 @@ Setelah diperoleh vektor profil user, kita dapat memprediksi film mana yang akan
 Kita bisa hitung perkiraan rating yang akan diberikan oleh user A dengan cara yang mirip dengan sebelumnya. Yakni merata-rata hasil perkalian profil film tersebut dengan profil user.
 
 IMPLEMENTASI
-Karena kodenya tidak terlalu panjang, saya tidak akan menuliskan secara detail di artikel ini. Kode lengkap bisa lihat di repo github berikut pada file `recommender.py`. Saya menggunakan pandas sebagai library utama untuk manipulasi matrix.
-
 Di kode tersebut saya menggunakan 21 fitur: 19 fitur pertama adalah genre film, dan 2 fitur berikutnya adalah aktor utama pada film tersebut (2 nama ini dipilih dari 2 nama aktor yang filmnya paling sering dirating oleh user pada data train), dapat dilihat pada variabel list `features`.
 Lalu inti dari kode tersebut terbagi menjadi tiga bagian (dapat dibaca di comment section kode tersebut):
 
